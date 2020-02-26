@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="killpacman.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="row"> <img id="pacman" src="pacman.gif"></div>
+        <div id="row"> <img id="pacman" src="pacman.gif"> </div>
+        <div id="row"> <img id="pacman" src="pacman.gif"> </div>
+        <div id="row"> <img id="pacman" src="pacman.gif"> </div>
+    </div>
+    <h1 id="ugh">
+        Goodbye my only friend
+    </h1>
+    <div id="message"> I THOUGHT YOU LOVED ME</div>
+
+
+    <button> please...no</button>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        $('#ugh').click(function () {
+            $("#ugh").css("color", "Blue");
+            $("#ugh").css("background-color", "pink");
+            $("#ugh").animate({ left: '500px' });
+        });
+
+        $("#pacman").click(function () {
+            $("#pacman").animate({ left: '500px' });
+        });
+
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                alert("I AM BEGGING YOU");
+                $("#ugh").fadeIn("slow");
+                $("#container").fadeOut("slow");
+                $("#message").fadeIn("fast");
+                $("#message").css("color", "red");
+                $("button").fadeOut("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#message").hide();
+            $("#ugh").hide();
+        });
+    
+
+    
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

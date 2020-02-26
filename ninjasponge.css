@@ -1,0 +1,14 @@
+.bob{
+    display: inline-block;
+    background-image: url(taco.png);
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    
+    
+}
+.row{
+    display: inline-block;
+    
+}

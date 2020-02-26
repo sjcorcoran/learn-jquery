@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ninjasponge.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="bob"></div>
+            <div class="bob"></div>
+            <div class="bob"></div>
+            <div class="bob"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="bob"></div>
+            <div class="bob"></div>
+            <div class="bob"></div>
+            <div class="bob"></div>
+        </div>
+        <br>
+        <button> "Smash for taco"</button>
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.bob').click(function () {
+                $(this).css("visibility", "hidden");
+            });
+
+            $("button").click(function() {
+                $('.bob').css("visibility", "visible")
+            })
+        });
+
+
+    </script>
+
+</body>
+
+</html>
