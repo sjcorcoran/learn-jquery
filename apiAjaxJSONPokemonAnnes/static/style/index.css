@@ -1,0 +1,39 @@
+body {
+  
+  justify-content: center;
+  background-color: aqua;
+}
+.container {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  height: 75%;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 50px;
+}
+header {
+  width:100%;
+  text-align: center;
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 35px;
+  padding:25px;
+  display: inline-block;
+  
+}
+#charmander, #charmeleon{
+  background-color: red;
+  max-width: 200px;
+}
+
+#bulbasaur, #venusaur, #ivysaur{
+  background-color: seagreen;
+  max-width: 200px;
+}
+
+
+
